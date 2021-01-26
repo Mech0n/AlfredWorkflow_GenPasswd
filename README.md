@@ -1,7 +1,7 @@
 # AlfredWorkflow_GenPasswd
 >  Use  alfred generate passwd
 
-<img src="image-20210126124945704.png" alt="image-20210126124945704" style="zoom:50%;" />
+[![e513d071b0f138abbcb4ae679656bded.png](https://img.vaala.cloud/images/2021/01/26/e513d071b0f138abbcb4ae679656bded.png)](https://img.vaala.cloud/image/YFQg)
 
 #### Installing
 
