@@ -1,7 +1,10 @@
 # AlfredWorkflow_GenPasswd
->  Use  alfred generate passwd
+>  Use  alfred generate passwd, You can choose the following two generated passwords：
+>
+>  - Contains only letters and numbers, length 16
+>  - Contain letters and numbers, special characters, length 16
 
-[![e513d071b0f138abbcb4ae679656bded.png](https://img.vaala.cloud/images/2021/01/26/e513d071b0f138abbcb4ae679656bded.png)](https://img.vaala.cloud/image/YFQg)
+<img src="https://img.vaala.cloud/images/2021/03/02/3046c8d90c43111f10f84463006b72f5.jpg" alt="3046c8d90c43111f10f84463006b72f5.jpg" style="zoom:50%;" />
 
 #### Installing
 
@@ -25,7 +28,7 @@ And we need:
 
   Or you can change the workflow, because the workflow use `/bin/zsh`, you can change the command.
 
-  ![897de8f669d1f70ab39b781356b48a12.png](https://img.vaala.cloud/images/2021/01/26/897de8f669d1f70ab39b781356b48a12.png)
+  <img src="https://img.vaala.cloud/images/2021/01/26/897de8f669d1f70ab39b781356b48a12.png" alt="897de8f669d1f70ab39b781356b48a12.png" style="zoom:50%;" />
 
 ⚠️Warning: Due to some dependency issues, my script only supports python2. A script that supports python3 is coming soon.
 

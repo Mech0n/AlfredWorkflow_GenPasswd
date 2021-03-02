@@ -7,36 +7,56 @@ import secrets
 from workflow import Workflow3
 
 def gen_passwd():
+    res = []
     # letter dectionary
-    alphabet = string.ascii_letters + string.digits
-
-    # set passwd length
-    passwd_length = 16
+    # alphabet = string.ascii_letters + string.digits + string.punctuation
     
-    # random a passwd
+    # Random a passwd， Contains only letters and numbers, length 16
+    passwd_length = 16
     while True:
-        passwd = ''.join(secrets.choice(alphabet) for i in range(passwd_length))
+        passwd = ''.join(secrets.choice(string.ascii_letters + string.digits) for i in range(passwd_length))
+        if (any(c.islower() for c in passwd)
+                and any(c.isupper() for c in passwd)
+                and sum(c.isdigit() for c in passwd) >= 3):
+            break
+    
+    res.append(passwd)
+
+    # Random a passwd, Contain letters and numbers, special characters, length 16
+    passwd_length = 16
+    while True:
+        passwd = ''.join(secrets.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(passwd_length))
         if (any(c.islower() for c in passwd)
                 and any(c.isupper() for c in passwd)
                 and sum(c.isdigit() for c in passwd) >= 3):
             break
 
-    return passwd
+    res.append(passwd)
 
-def generate_feedback_results(result):
-    wf = Workflow3()
-    kwargs = {
-                'title': result,
+    return res
+
+def generate_feedback_results(wf):
+    result = gen_passwd()
+
+    res = {
+                'title': result[0],
                 'subtitle': '' ,
                 "valid": True,
                 'arg': result
             }
-    wf.add_item(**kwargs)
+    wf.add_item(**res)
+    res = {
+                'title': result[1],
+                'subtitle': '' ,
+                "valid": True,
+                'arg': result
+            }
+    wf.add_item(**res)
     wf.send_feedback()
 
 def main():
-    query_data = gen_passwd()
-    generate_feedback_results(query_data)
+    wf = Workflow3()
+    generate_feedback_results(wf)
 
 if __name__ == "__main__":
     main()
