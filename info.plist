@@ -65,7 +65,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>103</integer>
 				<key>keyword</key>
 				<string>passwd</string>
 				<key>queuedelaycustom</key>
@@ -81,7 +81,7 @@
 				<key>script</key>
 				<string>/usr/bin/python gen_passwd.py</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
