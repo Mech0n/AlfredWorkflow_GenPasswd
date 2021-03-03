@@ -4,7 +4,7 @@
 >  - Contains only letters and numbers, length 16
 >  - Contain letters and numbers, special characters, length 16
 
-<img src="https://img.vaala.cloud/images/2021/03/02/e227c0193869fbc541e011a117c8c355.jpg" alt="3046c8d90c43111f10f84463006b72f5.jpg" style="zoom:50%;" />
+<img src="https://img.vaala.cloud/images/2021/03/03/aabb5a5b43c6c98b95e7a2c886b9b287.jpg" alt="aabb5a5b43c6c98b95e7a2c886b9b287.jpg" style="zoom:50%;" />
 
 #### Installing
 
