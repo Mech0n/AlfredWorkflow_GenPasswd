@@ -44,20 +44,20 @@ def gen_passwd():
 
 
 def generate_feedback_results(wf):
-    result = gen_passwd()
+    passwds = gen_passwd()
 
     res = {
-        'title': result[0],
+        'title': passwds[0],
         'subtitle': 'Contains only letters and numbers, length 16',
         "valid": True,
-        'arg': result
+        'arg': passwds[0]
     }
     wf.add_item(**res)
     res = {
-        'title': result[1],
+        'title': passwds[1],
         'subtitle': 'Contain letters and numbers, special characters, length 16',
         "valid": True,
-        'arg': result
+        'arg': passwds[1]
     }
     wf.add_item(**res)
     wf.send_feedback()

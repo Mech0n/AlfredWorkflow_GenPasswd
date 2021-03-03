@@ -38,7 +38,7 @@
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
-				<string>{query}</string>
+				<string></string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -65,7 +65,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>103</integer>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>passwd</string>
 				<key>queuedelaycustom</key>
@@ -81,7 +81,7 @@
 				<key>script</key>
 				<string>/usr/bin/python gen_passwd.py</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
@@ -103,7 +103,9 @@
 	</array>
 	<key>readme</key>
 	<string># About
-Generate a passwd of length 16 (You can change the lenght in gen_passwd.py)
+Use alfred generate passwd, You can choose the following two generated passwords：
+- Contains only letters and numbers, length 16
+- Contain letters and numbers, special characters, length 16
 
 # Usage
 passwd</string>
@@ -127,7 +129,7 @@ passwd</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>2.0</string>
 	<key>webaddress</key>
 	<string>https://www.cnblogs.com/yisumi/</string>
 </dict>
